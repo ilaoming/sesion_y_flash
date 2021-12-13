@@ -5,6 +5,7 @@
     <div class="container col-md-4 my-4 border border-1 rounded">
         <form action="/autenticar" method="post">
             <h1 class="text-dark text-center my-2">Login</h1>
+                <span class="text-danger"><%=error%></span>
             <div class="input-group mb-3">
                 <span class="input-group-text" id="user-icon" ><i class="fas fa-user-ninja"></i></span>
                 <input type="text"  id="user" name="user"  class="form-control" placeholder="Ingrese Usuario"  aria-describedby="user-icon">

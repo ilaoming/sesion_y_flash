@@ -15,7 +15,7 @@ app.use(flash())
 
 
 app.get('/', function(req, res) {
-    res.render('index',{ error: peticion.flash('error') });
+    res.render('index',{ error: req.flash('error') });
   });
 
   app.get('/home', function(req, res) {
